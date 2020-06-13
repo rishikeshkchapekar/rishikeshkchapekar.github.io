@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Tessellate 1.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project: Music Mood</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init_mm.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style_mm.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header" class="dark">
+				<header>
+					<h1>Music Mood</h1>
+					<p>AI bot to classify songs into different moods</p>
+				</header>
+				<footer>
+					<a href="#first" class="button scrolly">About Music Mood</a>
+				</footer>
+			</section>
+			
+		<!-- First -->
+			<section id="first" class="main">
+				<header>
+					<div class="container">
+						<h2>About Music Mood</h2>
+						<p>Music Mood was created as a part of a larger project, which is still under development</p>
+						<p>It uses a song's meta data to classify it into 3 broad moods</p>
+						<p>Hundreds of songs from the respective moods were selected and used for training for this bot</p>
+					</div>
+				</header>
+				<!-- <div class="content dark style1 featured">
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section>
+									<span class="feature-icon"><span class="fa fa-clock-o"></span></span>
+									<header>
+										<h3>Gravida</h3>
+									</header>
+									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. 
+									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus 
+									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia 
+									accumsan vivamus.</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section>
+									<span class="feature-icon"><span class="fa fa-bolt"></span></span>
+									<header>
+										<h3>Vivamus</h3>
+									</header>
+									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. 
+									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus 
+									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia 
+									accumsan vivamus.</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section>
+									<span class="feature-icon"><span class="fa fa-cloud"></span></span>
+									<header>
+										<h3>Accumsan</h3>
+									</header>
+									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. 
+									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus 
+									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia 
+									accumsan vivamus.</p>
+								</section>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<footer>
+									<a href="#second" class="button scrolly">Gravida tempor lacinia</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</section>
+
+		<!-- Second -->
+			<section id="second" class="main">
+				<!-- <header>
+					<div class="container">
+						<h2>Euismod sed feugiat lorem tempus magna</h2>
+						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
+						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
+					</div>
+				</header> -->
+				<div class="content dark style2">
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section>
+									<h3>Concept Of Music Mood</h3>
+									<p>
+										Music Mood used various meta data of the songs to generate the ML model.
+										Meta data included features like tempo,danceability,instrumentalness etc.
+									</p>
+									<p>
+										It is a Logistic Regression model
+									</p>
+									<p>
+										Thanks to Spotify API,it was an easy task getting the audio features for the song. However, problem was that the songs needed to be of the same genre to get a satisfactory output.
+									</p>
+									<p>
+										The reason for this is that due to the varying style of playing music in different genres, the audio features for the same mood would vastly vary.
+									</p>
+									<p>As a result,multiple models were made, one for one genre respectively. The end result was highly satisfying with an accuracy as high as 90% for something as subjective as a taste in music</p>
+									<p>People with similar tastes were asked to classify the mood of the song, and almost all answers were in support of the AI model,the others being in sync with its confusion matrix</p>
+									<!-- <footer>
+										<a href="#third" class="button scrolly">Accumsan nisi tempor</a>
+									</footer> -->
+								</section>
+							</div>
+							<div class="8u">
+								<div class="row no-collapse">
+									<img src="images/mood_result.png" alt="" />
+									<!-- <div class="6u"><a href="http://ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193" class="image full"><img src="images/pic02.jpg" alt="" /></a></div> -->
+								</div>
+								<!-- <div class="row no-collapse">
+									<div class="6u"><a href="http://ineedchemicalx.deviantart.com/art/Sherlockin-369847236" class="image full"><img src="images/pic03.jpg" alt="" /></a></div>
+									<div class="6u"><a href="http://ineedchemicalx.deviantart.com/art/A-breath-of-Hope-366359145" class="image full"><img src="images/pic04.jpg" alt="" /></a></div>
+								</div>
+								<div class="row no-collapse">
+									<div class="6u"><a href="http://ineedchemicalx.deviantart.com/art/The-Pursuit-355003425" class="image full"><img src="images/pic05.jpg" alt="" /></a></div>
+									<div class="6u"><a href="http://ineedchemicalx.deviantart.com/art/Cherish-320041163" class="image full"><img src="images/pic06.jpg" alt="" /></a></div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		<!-- Third -->
+			
+
+	</body>
+</html>
