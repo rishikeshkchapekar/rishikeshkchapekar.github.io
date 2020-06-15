@@ -42,7 +42,7 @@
 					<div class="container">
 						<h2>About Drown Alarm</h2>
 						<p>Drown alarm uses the live feed of a security camera watching over a swimming pool </p>
-						<p>Convolutional Neural Networks are used to analyse a sequence of frames, detect a person in it, and determine whether he/she is drowning</p>
+						<p><b>Convolutional Neural Networks</b> are used to analyse a sequence of frames, detect a person in it, and determine whether he/she is drowning</p>
 						
 					</div>
 				</header>
@@ -63,17 +63,20 @@
 						<div class="row">
 							<div class="4u">
 								<section>
-									<h3>How It Works</h3>
+									<h3><b>How It Works</b></h3>
 									<p>
-										This security system took input from a swimming pool's security camera's live feed, and analysed a sequence of frames to determine if there was someone drowning in it.
+										<b>Input: </b>Live video feed from security camera <br>
+										<b>Images: </b>Takes a <b>sequence of images</b> for analysis.
 									</p>
 									<p>
-										The drown detection was done using Convolutional Neural Networks, which were trained on a large dataset of multiple frames of people drowning against frames of people not drowning
+										<b>ML Algorithm:</b> Convolutional Neural Networks are used for classification<br>
+										<b>Data: </b>Large dataset of <b>image sequences</b> of people <b>drowing</b> against people <b>not downing</b>
 									</p>
 									<p>
-										It was necessary to consider a sequence of images rather than a single one as there would be cases where the swimmer was taking a dive or simply swimming underwater.
-
-										This system was able to differentiate between such cases most of the time
+										<b>Why sequence of images: </b>
+										To be able to differentiate between <b>actual drowning</b> and <b>false positive</b> cases<br>
+										<b>False Positive Cases: </b>Swimming underwater,diving in the pool etc.
+										<!-- <b>Avoiding False Positive: </b>As a sequence of images is considered, the system <b>is able to avoid false positives</b>  -->
 									</p>
 									<p>
 										The images shown here are not from the actual CCTV footage (privacy issues)
