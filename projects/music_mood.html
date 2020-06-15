@@ -41,8 +41,7 @@
 				<header>
 					<div class="container">
 						<h2>About Music Mood</h2>
-						<p>Music Mood was created as a part of a larger project, which is still under development</p>
-						<p>It uses a song's meta data to classify it into 3 broad moods</p>
+						<p>Music Mood uses a song's meta data to classify it into 3 broad moods</p>
 						<p>Hundreds of songs from the respective moods were selected and used for training for this bot</p>
 					</div>
 				</header>
@@ -113,20 +112,23 @@
 								<section>
 									<h3>Concept Of Music Mood</h3>
 									<p>
-										Music Mood used various meta data of the songs to generate the ML model.
-										Meta data included features like tempo,danceability,instrumentalness etc.
+										<b>Training Data: </b>Metadata from hundreds of songs<br>
+										<b>Meta Data: </b>Audio features like <b>tempo, instrumentalness </b>etc.
 									</p>
 									<p>
-										It is a Logistic Regression model
+										<b>ML Algorithm:</b>
+										It is a <b>Logistic Regression</b> model
 									</p>
 									<p>
-										Thanks to Spotify API,it was an easy task getting the audio features for the song. However, problem was that the songs needed to be of the same genre to get a satisfactory output.
+										<b>Collecting Data: </b>Spotify API allows a call to get <b>audio features</b><br>
+
 									</p>
 									<p>
-										The reason for this is that due to the varying style of playing music in different genres, the audio features for the same mood would vastly vary.
+										<b>Genre Wise Variation: </b>Different genres have <b>different patterns</b> of audio features for the <b>same mood</b><br>
+										<b>Handling Different Genres: </b>Multiple models were trained, one per genre
 									</p>
-									<p>As a result,multiple models were made, one for one genre respectively. The end result was highly satisfying with an accuracy as high as 90% for something as subjective as a taste in music</p>
-									<p>People with similar tastes were asked to classify the mood of the song, and almost all answers were in support of the AI model,the others being in sync with its confusion matrix</p>
+									<p><b>Accuracy: </b>An average of 90% accuracy was achieved</p>
+									
 									<!-- <footer>
 										<a href="#third" class="button scrolly">Accumsan nisi tempor</a>
 									</footer> -->
@@ -134,7 +136,10 @@
 							</div>
 							<div class="8u">
 								<div class="row no-collapse">
+									<div class="img-div"></div>
 									<img src="images/mood_result.png" alt="" />
+									</div>
+									<p>When people with similar music tastes were given the same samples , most of their answers matched the ML output</p><br> The other answers were in sync with the confusion matrix
 									<!-- <div class="6u"><a href="http://ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193" class="image full"><img src="images/pic02.jpg" alt="" /></a></div> -->
 								</div>
 								<!-- <div class="row no-collapse">
