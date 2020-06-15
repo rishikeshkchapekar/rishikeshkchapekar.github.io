@@ -16,7 +16,8 @@
 	{
 		background: #F8F8F8;
 	}
-
+.img-div { height:100%; width:100%;}
+img { max-width:100% }
 	body,input,textarea,select
 	{
 		font-family: 'Roboto', sans-serif;
